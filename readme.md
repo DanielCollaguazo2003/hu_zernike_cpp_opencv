@@ -2,6 +2,27 @@
 
 Esta aplicación móvil permite al usuario dibujar figuras geométricas en un lienzo interactivo y clasificar automáticamente la figura dibujada como círculo, cuadrado o triángulo, utilizando momentos invariantes de Hu o momentos de Zernike. El modelo de clasificación se basa en datos de referencia almacenados en un archivo CSV.
 
+
+## **1. Introducción**
+En este proyecto, se desarrolla una aplicación móvil en **Swift** que permite capturar imágenes dibujadas por el usuario y analizar su contenido mediante la extracción de **momentos de Hu** y **momentos de Zernike**. Estos momentos son utilizados como descriptores de forma para clasificar los dibujos en diferentes categorías predefinidas.
+
+## **2. Fundamentos Teóricos**
+### **2.1. Momentos de Hu**
+Los momentos de Hu son un conjunto de **siete invariantes geométricos** derivados de los momentos centrales de una imagen. Fueron introducidos por Ming-Kuei Hu en 1962 y se utilizan para representar la forma de los objetos en imágenes digitales de manera **invariante a traslación, escala y rotación**.
+
+Los siete momentos de Hu están diseñados para capturar propiedades esenciales de la forma, permitiendo el reconocimiento de patrones sin importar la orientación o tamaño de la imagen.
+
+- **Invariantes a transformaciones geométricas**: La forma puede ser reconocida sin importar su posición, tamaño u orientación.  
+- **Fáciles de calcular**: Se basan en momentos estadísticos de la imagen.  
+- **Se utilizan ampliamente en reconocimiento de patrones y visión por computadora**.  
+
+### **2.2. Momentos de Zernike**
+Los momentos de Zernike son descriptores basados en **polinomios ortogonales definidos en un disco unitario**. Se utilizan en el análisis de imágenes porque son **invariantes a traslación, rotación y escala**, al igual que los momentos de Hu, pero ofrecen una representación más compacta y descriptiva.
+
+- **Ortogonalidad**: Los polinomios de Zernike son ortogonales dentro de un disco unitario, evitando redundancias en la información extraída.  
+- **Mayor precisión**: Permiten reconstrucciones de formas con menos coeficientes en comparación con los momentos de Hu.  
+- **Se utilizan en aplicaciones de reconocimiento de patrones y visión artificial**.  
+
 ### Flujo
 
 1.	El usuario dibuja una figura geométrica (círculo, cuadrado o triángulo) en el lienzo.
