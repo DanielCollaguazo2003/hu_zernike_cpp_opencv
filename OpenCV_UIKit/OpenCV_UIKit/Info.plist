@@ -8,6 +8,8 @@
 	<string></string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Esta aplicación necesita acceso a la red local para comunicarse con dispositivos cercanos.</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
