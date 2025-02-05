@@ -1,0 +1,1 @@
+#import "FilterApplicatorBridge.h"
